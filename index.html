@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Daily Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Expense Tracker</h1>
+    <form id="expense-form">
+      <input type="date" id="expense-date" required />
+      <input type="text" id="expense-desc" placeholder="Description" required />
+      <input type="number" id="expense-amount" placeholder="Amount" min="0.01" step="0.01" required />
+      <button type="submit">Add Expense</button>
+    </form>
+    <h2>Expenses by Date</h2>
+    <table id="expenses-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Total Amount</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Grouped expenses and details will be listed here -->
+      </tbody>
+    </table>
+    <template id="details-template">
+      <tr class="details-row">
+        <td colspan="3">
+          <table class="details-table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </template>
+    <div class="total">
+      <strong>Grand Total:</strong> ₹<span id="total-amount">0.00</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

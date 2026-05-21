@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-05-21",
+    "description": "Coffee",
+    "amount": "300.00"
+  },
+  {
+    "date": "2026-05-20",
+    "description": "Chai",
+    "amount": "25.00"
+  },
+  {
+    "date": "2026-05-14",
+    "description": "Coffee",
+    "amount": "300.00"
+  },
+  {
+    "date": "2026-05-21",
+    "description": "Water",
+    "amount": "40.00"
+  },
+  {
+    "date": "2026-05-20",
+    "description": "Water",
+    "amount": "60.00"
+  },
+  {
+    "date": "2026-05-15",
+    "description": "Water",
+    "amount": "20.00"
+  }
+]
